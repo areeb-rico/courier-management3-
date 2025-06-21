@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Middleware\rider;
 use App\Http\Middleware\Admin;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -26,11 +26,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/dashboardrider', function () {
-    return view('riderdash.riderindex');
-});
+
 Route::get('/404', function () {
     return view('404'); 
+}); 
+Route::get('/pagerestricted', function () {
+    return view('restrict'); 
 }); 
 
 
@@ -38,5 +39,12 @@ Route::get('/404', function () {
 Route::middleware([Admin::class])->group(function(){
 Route::get('/widget', function () {
     return view('admin.widget');
+});
+});
+
+//These routes are for riders
+Route::middleware([rider::class])->group(function(){
+Route::get('/dashboardrider', function () {
+    return view('riderdash.riderindex');
 });
 });
