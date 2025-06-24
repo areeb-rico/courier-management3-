@@ -7,7 +7,18 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('index');
 });
-
+Route::get('/navigation', function () {
+    return view('navigation-menu');
+});
+Route::get('/policy', function () {
+    return view('policy');
+});
+Route::get('/terms&conditions', function () {
+    return view('terms');
+});
+Route::get('/riderrigester', function () {
+    return view('riderrigester');
+});
 
 
 Route::middleware([
@@ -48,3 +59,6 @@ Route::get('/dashboardrider', function () {
     return view('riderdash.riderindex');
 });
 });
+
+
+
