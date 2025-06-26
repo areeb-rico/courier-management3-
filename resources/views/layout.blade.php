@@ -37,44 +37,82 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="/"><img src="assets/img/gallery/logo.png" height="45" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/">Home</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="services">Our Services</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="findUs">Find Us</a></li>
-            </ul>
-            <div class="dropdown d-none d-lg-block">
-              <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-warning"></i></button>
-              <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
-                <form>
-                  <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style= />
-                </form>
-              </div>
-         
-            <a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="/register">Become a Rider</a>
-            @if(Auth::user())
-            <form action="/logout" method="post">
-              @csrf
-              <button type="submit" class="btn mx-2" style="background-color: red; color:white; padding:5px" class=" mx-2">Logout</button>
-            </form>
+  <nav class="navbar navbar-expand-lg fixed-top py-3 d-block" style="background-color: #003366;">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="assets/img/gallery/new logo.jpg" height="50px"  alt="logo" />
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+          <li class="nav-item px-2">
+            <a class="nav-link text-light" href="/">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link text-light" href="services">Our Services</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link text-light" href="findUs">Find Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<
 
-            @else
-  <a class="btn btn-warning order-1 order-lg-0 ms-lg-3" href="/register">Become a Member</a>
+           <nav class="navbar navbar-expand-lg fixed-top py-3 d-block" style="background-color: #003366;">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="assets/img/gallery/new logo.jpg" height="50px" alt="logo" />
+    </a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
 
-            @endif
-            <form class="d-flex my-3 d-block d-lg-none">
-              <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-          </div>
+    <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+        <li class="nav-item px-2"><a class="nav-link text-light" href="/">Home</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="services">Our Services</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="findUs">Find Us</a></li>
+      </ul>
+
+      <!-- SEARCH DROPDOWN -->
+      <div class="dropdown d-none d-lg-block">
+        <button class="btn btn-outline-light ms-2" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-search text-white"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
+          <form>
+            <input class="form-control border-0 bg-light text-dark px-3" type="search" placeholder="Search..." aria-label="Search" />
+          </form>
         </div>
-      </nav>
-      <section class="py-xxl-10 pb-0" id="home">
-        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-header-bg.png);background-position:top center;background-size:cover;">
-        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <a class="btn ms-3" style="background-color: #007f5f; color: white;" href="/register">Become a Rider</a>
+
+      @if(Auth::user())
+      <form action="/logout" method="post">
+        @csrf
+        <button type="submit" class="btn ms-2" style="background-color: red; color:white;">Logout</button>
+      </form>
+      @else
+      <a class="btn ms-3" style="background-color: #007f5f; color: white;" href="/register">Become a Member</a>
+      @endif
+
+      <!-- MOBILE SEARCH -->
+      <form class="d-flex my-3 d-block d-lg-none">
+        <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Search..." aria-label="Search" />
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
         <!--/.bg-holder-->  
 
 @yield('content3')
@@ -85,7 +123,7 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img src="assets/img/gallery/footer-logo.png" height="51" alt="" /></a>
+            <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img src="assets/img/gallery/new logo.jpg" height="50px" alt="" /></a>
               <p class="text-500 my-4">The most trusted Courier<br />company in your area.</p>
             </div>
             <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
