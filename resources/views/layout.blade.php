@@ -37,7 +37,7 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container"><a class="navbar-brand" href="/"><img src="assets/img/gallery/logo.png" height="45" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
@@ -72,16 +72,14 @@
           </div>
         </div>
       </nav>
-      <section class="py-xxl-10 pb-0" id="home">
-        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-header-bg.png);background-position:top center;background-size:cover;">
-        </div>
+      
         <!--/.bg-holder-->  
 
 @yield('content3')
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-900 pb-0 pt-5">
+      <section class=" pb-0 pt-5 bg-1000">
 
         <div class="container">
           <div class="row">
@@ -128,17 +126,11 @@
       <section class="py-0 bg-1000">
 
         <div class="container">
-          <div class="row justify-content-md-between justify-content-evenly py-4">
+          <div class="row justify-content-center justify-content-center py-2">
             <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
               <p class="fs--1 my-2 fw-bold text-200">All rights Reserved &copy; Your Company, 2021</p>
             </div>
-            <div class="col-12 col-sm-8 col-md-6">
-              <p class="fs--1 my-2 text-center text-md-end text-200"> Made with&nbsp;
-                <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#F95C19" viewBox="0 0 16 16">
-                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                </svg>&nbsp;by&nbsp;<a class="fw-bold text-primary" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
-              </p>
-            </div>
+            
           </div>
         </div>
         <!-- end of .container-->
