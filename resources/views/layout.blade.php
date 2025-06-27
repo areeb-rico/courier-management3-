@@ -54,7 +54,7 @@
                 </form>
               </div>
          
-            <a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="/register">Become a Rider</a>
+            <a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="/becomearider">Become a Rider</a>
             @if(Auth::user())
             <form action="/logout" method="post">
               @csrf
@@ -81,7 +81,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-900 pb-0 pt-5">
+      <section class="bg-900 pb-0 pt-5" style="position:fixed:bottom:0px">
 
         <div class="container">
           <div class="row">

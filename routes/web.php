@@ -3,6 +3,7 @@ use App\Http\Middleware\rider;
 use App\Http\Middleware\Admin;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('index');
@@ -29,13 +30,23 @@ Route::middleware([
     Route::get('/dashboard', function () {
         if(Auth::user()->userrole == 'user')
         {
-             return view('dashboard');
+             return redirect('/');
+        }
+        else if(Auth::user()->userrole == 'rider')
+        {
+ return view('riderdash.riderindex');
         }
         else{
  return view('admin.index');
         }
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/becomearider', function () {
+    return view('becomearider');
+});
+
+Route::post('/updateriderrequest/{id}',[UserController::class, 'updateRiderRequest'])->name('updateriderrequest');
 });
 
 Route::get('/404', function () {
@@ -55,9 +66,7 @@ Route::get('/widget', function () {
 
 //These routes are for riders
 Route::middleware([rider::class])->group(function(){
-Route::get('/dashboardrider', function () {
-    return view('riderdash.riderindex');
-});
+
 });
 
 
