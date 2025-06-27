@@ -13,7 +13,7 @@
       
       <!-- Image Section (Right Side) -->
       <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
-        <img class="pt-5 pt-md-0 w-100 rounded shadow" src="{{ asset('images/images.png') }}" alt="hero-header" />
+        <img class="pt-5 pt-md-0 w-100 " src="{{ asset('images/images.png') }}" alt="hero-header" />
       </div>
 
       <!-- Text Section (Left Side) -->
@@ -422,7 +422,7 @@
 
     <div class="row">
       <div class="col-12">
-        <div class="card card-span rounded-3 border-0 shadow-sm" style="background-color: #ffffff;]">
+        <div class="card card-span rounded-3 border-0 shadow-sm" style="background-color: #ffffff;">
           <div class="row g-0">
             <!-- Map Column -->
             <div class="col-md-6 col-lg-7">

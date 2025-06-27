@@ -73,6 +73,7 @@
         </div>
       </nav>
       
+     <!-- <section class="py-xxl-10 pb-0" id="home"> -->
         <!--/.bg-holder-->  
 
 @yield('content3')
