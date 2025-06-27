@@ -19,7 +19,7 @@
   --bs-indigo: #6237FF;
   --bs-purple: #A1B0FC;
   --bs-pink: #D42DA3;
-  --bs-red: #F95C19;
+  --bs-red: #d01920;
   --bs-orange: #F17228;
   --bs-yellow: #FFAF0F;
   --bs-green: #00BA77;
@@ -28,12 +28,12 @@
   --bs-white: #FFFEFE;
   --bs-gray: #7B7A8B;
   --bs-gray-dark: #464558;
-  --bs-primary: #F95C19;
+  --bs-primary: #d01920;
   --bs-secondary: #0088B4;
   --bs-success: #00BA77;
   --bs-info: #00CEC2;
   --bs-warning: #FFAF0F;
-  --bs-danger: #F95C19;
+  --bs-danger: #d01920;
   --bs-light: #F0F4F9;
   --bs-dark: #222132;
   --bs-font-sans-serif: "Raleway", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -84,7 +84,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Raleway", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 800;
   line-height: 1.2;
-  color: #11111D;
+  color: #d01920;
 }
 
 h1, .h1 {
