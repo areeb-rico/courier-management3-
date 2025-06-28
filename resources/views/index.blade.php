@@ -4,10 +4,10 @@
 @section('content3')
 
   
-<section class="py-xxl-10 pb-0" id="home">
-        <div class="bg-holder " style="background-color:#f0f9ff;">
-        </div>
-        <section style="background-color: #012b3c;">
+
+     
+       
+     <section style="background-color: #012b3c;">
   <div class="container">
     <div class="row align-items-center">
       

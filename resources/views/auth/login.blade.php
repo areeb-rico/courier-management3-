@@ -2,8 +2,8 @@
 @section('content3')
 <style>
     .bgimg{
-        height:500px;
-        background-image: url('Images/bgimg.png');
+        height:550px;
+        background-image: url('Images/bgimg2.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -22,8 +22,8 @@
 </style>
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 mt-2 bgimg"></div>
-        <div class="col-lg-6 mt-2">
+        <div class="col-lg-6 bgimg"></div>
+        <div class="col-lg-6 mt-4">
     <h1 class="text-md-start text-center">Login Yourself</h1>
 
    <x-validation-errors class="mb-4" />

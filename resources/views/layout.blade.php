@@ -36,8 +36,8 @@
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+    <main  id="top" style="background-color: #f0f9ff;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block " data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container"><a class="navbar-brand" href="/"><img src="assets/img/gallery/logo.png" height="45" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
@@ -72,7 +72,8 @@
           </div>
         </div>
       </nav>
-      
+      <section class="py-xxl-5 pb-0" style="background-color: #f0f9ff;">
+        </section>
      <!-- <section class="py-xxl-10 pb-0" id="home"> -->
         <!--/.bg-holder-->  
 
@@ -80,11 +81,9 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-<<<<<<< HEAD
-      <section class="bg-900 pb-0 pt-5" style="position:fixed:bottom:0px">
-=======
-      <section class=" pb-0 pt-5 bg-1000">
->>>>>>> 7ffe9326c66ca11a6a2c28040d7ba131cf52147c
+
+      <section class="bg-900 pb-0 pt-5">
+
 
         <div class="container">
           <div class="row">
@@ -128,7 +127,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0 bg-1000">
+      <section class="py-0 bg-900">
 
         <div class="container">
           <div class="row justify-content-center justify-content-center py-2">

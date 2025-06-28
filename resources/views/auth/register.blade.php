@@ -2,8 +2,8 @@
 @section('content3')
 <style>
     .bgimg{
-        height:500px;
-        background-image: url('Images/bgimg.png');
+        height:550px;
+        background-image: url('Images/bgimg3.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
