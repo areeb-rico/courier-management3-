@@ -44,7 +44,7 @@
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/git ">Home</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="services">Our Services</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="findUs">Find Us</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="/riderregister">riderrigestered</a></li>
             </ul>
             <div class="dropdown d-none d-lg-block">
               <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-warning"></i></button>

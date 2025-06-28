@@ -4,6 +4,7 @@ use App\Http\Middleware\Admin;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\riderControler;
 
 Route::get('/', function () {
     return view('index');
@@ -69,5 +70,13 @@ Route::middleware([rider::class])->group(function(){
 
 });
 
+Route::get('/riderregister', function () {
+    return view('riderregistered');
+});
 
+route::post('/addrider',[ridercontroler::class,('register')]);
+route::get('/allriders',[ridercontroler::class,('getriders')]);
 
+Route::get('/viewrider', function () {
+    return view('admin.viewrider');
+});

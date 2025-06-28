@@ -67,7 +67,7 @@
                         <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"><i class="fa fa-cubes text-dark me-2"></i>Elements</a>
                     <a href="/widget" class=" nav-item nav-link text-white"><i class="fa fa-box-open text-dark me-2"></i> view parcels</a>
                     <a href="form.html" class="nav-item nav-link text-white"><i class="fa fa-user-plus text-dark me-2"></i>add rider</a>
-                    <a href="table.html" class="nav-item nav-link text-white"><i class="fa fa-users text-dark me-2"></i>view riders</a>
+                    <a href="/viewrider" class="nav-item nav-link text-white"><i class="fa fa-users text-dark me-2"></i>view riders</a>
                     
                 </div>
             </nav>
