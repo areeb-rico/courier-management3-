@@ -37,8 +37,8 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main  id="top" style="background-color: #f0f9ff;">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block " data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="/"><img src="assets/img/gallery/logo.png" height="45" alt="logo" /></a>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top  d-block " data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="/"><img src="assets/img/gallery/logo.png" Xheight="110" width="110" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
