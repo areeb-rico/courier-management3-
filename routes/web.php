@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\riderControler;
+use App\Models\User;
 
 Route::get('/', function () {
     return view('index');
@@ -77,6 +78,13 @@ Route::get('/riderregister', function () {
 route::post('/addrider',[ridercontroler::class,('register')]);
 route::get('/allriders',[ridercontroler::class,('getriders')]);
 
-Route::get('/viewrider', function () {
-    return view('admin.viewrider');
-});
+Route::get('/viewrider',[ridercontroler::class,('viewrider')])->name('viewrider');
+Route::post('acceptrider/{id}',[ridercontroler::class,('acceptrider')])->name('acceptrider');
+Route::post('rejectrider/{id}',[ridercontroler::class,('rejectrider')])->name('rejectrider');
+
+
+
+Route::get('/approvedriders', function () {
+    $riders = User::where('userrole', 'rider')->where('rider_request', 'Accepted')->get();
+    return view('admin.approvedriders', compact('riders'));
+})->name('approvedriders');
