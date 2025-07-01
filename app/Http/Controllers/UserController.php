@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Parcel;
 
 class UserController extends Controller
 {
@@ -30,5 +31,32 @@ class UserController extends Controller
         
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Rider request updated successfully.');
+    }
+   public function FindParcelForUser(Request $req)
+    {
+      $pcode = $req->input('PCode');
+      // $p = Parcel::where('ParcelCode',$pcode)->join('riders')->get();    
+     $p = Parcel::join('riders', 'parcels.RiderId', '=', 'riders.id')
+           ->leftjoin('currentlocations', 'riders.id', '=', 'currentlocations.RiderId')
+           
+           ->where('ParcelCode', $pcode)
+           ->select(
+            'parcels.*',
+            'riders.RiderName',
+            'riders.RiderPhone',
+            'currentlocations.Latitude',
+            'currentlocations.Longitude'
+        )
+        ->first();
+           
+
+      
+      
+    
+    if ($p) {
+        return response()->json([$p]); // keep as array for frontend compatibility
+    } else {
+        return response()->json([], 404);
+    }
     }
 }

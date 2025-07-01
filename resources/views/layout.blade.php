@@ -29,7 +29,14 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
-
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  #services {
+  scroll-margin-top: 20px; /* adjust based on your navbar height */
+}
+</style>
   </head>
   <body>
 
@@ -42,36 +49,44 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/git ">Home</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="services">Our Services</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="/riderregister">riderrigestered</a></li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/ ">Home</a></li>
+              <li class="nav-item px-2">
+    <a class="nav-link" href="#services">Our Services</a>
+</li>
+             <li class="nav-item px-2"><a class="nav-link" href="/findParcel">Find Your Parcel</a></li>
             </ul>
             <div class="dropdown d-none d-lg-block">
-              <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-warning"></i></button>
+
+               <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-warning"></i></button>
               <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
                 <form>
-                  <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style= />
+                  <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style="background:#FDF1DF;" />
                 </form>
               </div>
+            </div>
+              
+               
+              
          
             <a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="/becomearider">Become a Rider</a>
             @if(Auth::user())
             <form action="/logout" method="post">
               @csrf
-              <button type="submit" class="btn mx-2" style="background-color: red; color:white; padding:5px" class=" mx-2">Logout</button>
+             <button type="submit" class="btn mx-2" style="background-color: red; color:white; padding:5px" class=" mx-2">Logout</button>
             </form>
 
             @else
   <a class="btn btn-warning order-1 order-lg-0 ms-lg-3" href="/register">Become a Member</a>
 
             @endif
-            <form class="d-flex my-3 d-block d-lg-none">
+<form class="d-flex my-3 d-block d-lg-none">
               <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
               <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
+
       <section class="py-xxl-5 pb-0" style="background-color: #f0f9ff;">
         </section>
      <!-- <section class="py-xxl-10 pb-0" id="home"> -->

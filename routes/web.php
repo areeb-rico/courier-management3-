@@ -59,15 +59,26 @@ Route::get('/pagerestricted', function () {
 }); 
 
 
+
 //These routes are for admin
 Route::middleware([Admin::class])->group(function(){
 Route::get('/widget', function () {
     return view('admin.widget');
 });
+
+    Route::get('/admin/viewparcels',[RiderControler::class,('getparceladmin')]);
 });
 
 //These routes are for riders
 Route::middleware([rider::class])->group(function(){
+ Route::get('/uploadparcel',[RiderControler::class,('getparcelform')]);
+    
+Route::get('/viewparcels',[RiderControler::class,('getparcels')]);
+
+
+Route::get('/updatelocation', function () {
+    return view('riderdash.mylocation'); 
+}); 
 
 });
 
@@ -88,3 +99,36 @@ Route::get('/approvedriders', function () {
     $riders = User::where('userrole', 'rider')->where('rider_request', 'Accepted')->get();
     return view('admin.approvedriders', compact('riders'));
 })->name('approvedriders');
+
+
+    Route::get('/findParcel', function () {
+    if (!Auth::check()) {
+        // If user is NOT logged in, redirect to register page
+        return redirect('/register');
+    }
+
+    // If logged in, check user role
+    if (Auth::user()->userrole == 'admin') {
+        return view('admin.findparcel');
+    } else {
+        return view('findyourparcel');
+    }
+});
+
+
+
+Route::post('/finduserparcel', [UserController::class, 'FindParcelForUser']);
+
+Route::post('/uploadparcelform',[RiderControler::class,('UploadParcel')]);
+
+
+
+Route::get('/riderregister',function(){
+    return View('riderregister');
+    });
+
+    Route::post('/addlocation',[RiderControler::class,('sharelocation')]);
+   
+ 
+
+

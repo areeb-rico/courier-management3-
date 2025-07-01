@@ -2,7 +2,7 @@
 @extends('riderdash.layout')
 @section('content2')
 
-   
+    <div class="body-wrapper">
       <div class="body-wrapper-inner">
         <div class="container-fluid">
           <!--  Row 1 -->
@@ -12,20 +12,20 @@
                 <div class="card-body">
                   <div class="d-md-flex align-items-center">
                     <div>
-                      <h4 class="card-title">Sales Overview</h4>
-                      <p class="card-subtitle">
-                        Ample admin Vs Pixel admin
+                      <h3 class="card-title fw-bold">parcel status</h3>
+                      <p class="card-subtitle fw-bold">
+                        our courier management system is designed to provide a seamless <br> experience for both riders  and customers.
                       </p>
                     </div>
                     <div class="ms-auto">
                       <ul class="list-unstyled mb-0">
                         <li class="list-inline-item text-primary">
                           <span class="round-8 text-bg-primary rounded-circle me-1 d-inline-block"></span>
-                          Ample
+                          RECEIVED
                         </li>
                         <li class="list-inline-item text-info">
                           <span class="round-8 text-bg-info rounded-circle me-1 d-inline-block"></span>
-                          Pixel Admin
+                        DELIVERED
                         </li>
                       </ul>
                     </div>
@@ -40,7 +40,7 @@
                   <div class="d-flex align-items-start">
                     <div>
                       <h4 class="card-title">Weekly Stats</h4>
-                      <p class="card-subtitle">Average sales</p>
+                      <p class="card-subtitle">Parcels Delivered </p>
                     </div>
                     <div class="ms-auto">
                       <div class="dropdown">
@@ -67,7 +67,7 @@
                       <i class="ti ti-shopping-cart fs-6"></i>
                     </span>
                     <div class="ms-3">
-                      <h5 class="mb-0 fw-bolder fs-4">Top Sales</h5>
+                      <h5 class="mb-0 fw-bolder fs-4">Rider of the Week</h5>
                       <span class="text-muted fs-3">Johnathan Doe</span>
                     </div>
                     <div class="ms-auto">
@@ -79,8 +79,8 @@
                       <i class="ti ti-star fs-6"></i>
                     </span>
                     <div class="ms-3">
-                      <h5 class="mb-0 fw-bolder fs-4">Best Seller</h5>
-                      <span class="text-muted fs-3">MaterialPro Admin</span>
+                      <h5 class="mb-0 fw-bolder fs-4">Most Active City</h5>
+                      <span class="text-muted fs-3">karachi</span>
                     </div>
                     <div class="ms-auto">
                       <span class="badge bg-secondary-subtle text-muted">+68%</span>
@@ -91,11 +91,11 @@
                       <i class="ti ti-message-dots fs-6"></i>
                     </span>
                     <div class="ms-3">
-                      <h5 class="mb-0 fw-bolder fs-4">Most Commented</h5>
-                      <span class="text-muted fs-3">Ample Admin</span>
+                      <h5 class="mb-0 fw-bolder fs-4">On-Time Delivery rate</h5>
+                      <span class="text-muted fs-3">In pakistan</span>
                     </div>
                     <div class="ms-auto">
-                      <span class="badge bg-secondary-subtle text-muted">+68%</span>
+                      <span class="badge bg-secondary-subtle text-muted">+50%</span>
                     </div>
                   </div>
                   <div class="pt-3 mb-7 d-flex align-items-center">
@@ -103,8 +103,8 @@
                       <i class="ti ti-diamond fs-6"></i>
                     </span>
                     <div class="ms-3">
-                      <h5 class="mb-0 fw-bolder fs-4">Top Budgets</h5>
-                      <span class="text-muted fs-3">Sunil Joshi</span>
+                      <h5 class="mb-0 fw-bolder fs-4">Top sales</h5>
+                      <span class="text-muted fs-3">islamabad</span>
                     </div>
                     <div class="ms-auto">
                       <span class="badge bg-secondary-subtle text-muted">+15%</span>
@@ -118,16 +118,16 @@
                 <div class="card-body">
                   <div class="d-md-flex align-items-center">
                     <div>
-                      <h4 class="card-title">Products Performance</h4>
+                      <h4 class="card-title">Rider Performance</h4>
                       <p class="card-subtitle">
-                        Ample Admin Vs Pixel Admin
+                        projected through the sales and on time delivery
                       </p>
                     </div>
                     <div class="ms-auto mt-3 mt-md-0">
                       <select class="form-select theme-select border-0" aria-label="Default select example">
                         <option value="1">March 2025</option>
-                        <option value="2">March 2025</option>
-                        <option value="3">March 2025</option>
+                        <option value="2">april 2025</option>
+                        <option value="3">may 2025</option>
                       </select>
                     </div>
                   </div>
@@ -136,14 +136,23 @@
                       <thead>
                         <tr>
                           <th scope="col" class="px-0 text-muted">
-                            Assigned
+                            Rider	
                           </th>
-                          <th scope="col" class="px-0 text-muted">Name</th>
+                      
                           <th scope="col" class="px-0 text-muted">
-                            Priority
+                           Deliveries
                           </th>
                           <th scope="col" class="px-0 text-muted text-end">
-                            Budget
+                            On-Time %
+                          </th>
+                            <th scope="col" class="px-0 text-muted text-end">
+                            Avg. Delivery Time
+                          </th>
+                            <th scope="col" class="px-0 text-muted text-end">
+                           Performance
+                          </th>
+                            <th scope="col" class="px-0 text-muted text-end">
+                            Earnings
                           </th>
                         </tr>
                       </thead>
@@ -154,106 +163,134 @@
                               <img src="./assets/images/profile/user-3.jpg" class="rounded-circle" width="40"
                                 alt="flexy" />
                               <div class="ms-3">
-                                <h6 class="mb-0 fw-bolder">Sunil Joshi</h6>
-                                <span class="text-muted">Web Designer</span>
+                                <h6 class="mb-0 fw-bolder">shoaib akhter</h6>
+                                <span class="text-muted">since:17 years</span>
                               </div>
                             </div>
                           </td>
-                          <td class="px-0">Elite Admin</td>
+                          <td class="px-0">1000</td>
                           <td class="px-0">
-                            <span class="badge bg-info">Low</span>
+                            <span class="badge bg-info">80%</span>
                           </td>
                           <td class="px-0 text-dark fw-medium text-end">
-                            $3.9K
+                            22mins
+                          </td>
+                          <td class="px-0  fw-medium text-end">
+                            excellent
+                          </td>
+                           <td class="px-0  fw-medium text-end">
+                            1.5lacs per month
                           </td>
                         </tr>
-                        <tr>
+                         <tr>
                           <td class="px-0">
                             <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile/user-5.jpg" class="rounded-circle" width="40"
+                              <img src="./assets/images/profile/user-3.jpg" class="rounded-circle" width="40"
                                 alt="flexy" />
                               <div class="ms-3">
-                                <h6 class="mb-0 fw-bolder">
-                                  Andrew McDownland
-                                </h6>
-                                <span class="text-muted">Project Manager</span>
+                                <h6 class="mb-0 fw-bolder">areeb khan</h6>
+                                <span class="text-muted">since: 4 years</span>
                               </div>
                             </div>
                           </td>
-                          <td class="px-0">Real Homes WP Theme</td>
+                          <td class="px-0">600</td>
                           <td class="px-0">
-                            <span class="badge text-bg-primary">Medium</span>
+                            <span class="badge bg-info">92%</span>
                           </td>
                           <td class="px-0 text-dark fw-medium text-end">
-                            $24.5K
+                            19mins
+                          </td>
+                          <td class="px-0  fw-medium text-end">
+                            very good
+                          </td>
+                           <td class="px-0  fw-medium text-end">
+                           95k per month
                           </td>
                         </tr>
-                        <tr>
+                         <tr>
                           <td class="px-0">
                             <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile/user-6.jpg" class="rounded-circle" width="40"
+                              <img src="./assets/images/profile/user-3.jpg" class="rounded-circle" width="40"
                                 alt="flexy" />
                               <div class="ms-3">
-                                <h6 class="mb-0 fw-bolder">
-                                  Christopher Jamil
-                                </h6>
-                                <span class="text-muted">SEO Manager</span>
+                                <h6 class="mb-0 fw-bolder">zoya malik</h6>
+                                <span class="text-muted">since: 2 years</span>
                               </div>
                             </div>
                           </td>
-                          <td class="px-0">MedicalPro WP Theme</td>
+                          <td class="px-0">760</td>
                           <td class="px-0">
-                            <span class="badge bg-warning">Hight</span>
+                            <span class="badge bg-info">85%</span>
                           </td>
                           <td class="px-0 text-dark fw-medium text-end">
-                            $12.8K
+                          24mins
+                          </td>
+                          <td class="px-0  fw-medium text-end">
+                          good
+                          </td>
+                           <td class="px-0  fw-medium text-end">
+                        83k per month
                           </td>
                         </tr>
-                        <tr>
+                         <tr>
                           <td class="px-0">
                             <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile/user-7.jpg" class="rounded-circle" width="40"
+                              <img src="./assets/images/profile/user-3.jpg" class="rounded-circle" width="40"
                                 alt="flexy" />
                               <div class="ms-3">
-                                <h6 class="mb-0 fw-bolder">Nirav Joshi</h6>
-                                <span class="text-muted">Frontend Engineer</span>
+                                <h6 class="mb-0 fw-bolder">rizwan alir</h6>
+                                <span class="text-muted">since: 6 years</span>
                               </div>
                             </div>
                           </td>
-                          <td class="px-0">Hosting Press HTML</td>
+                          <td class="px-0">950</td>
                           <td class="px-0">
-                            <span class="badge bg-danger">Low</span>
+                            <span class="badge bg-info">88%</span>
                           </td>
                           <td class="px-0 text-dark fw-medium text-end">
-                            $2.4K
+                          21mins
+                          </td>
+                          <td class="px-0  fw-medium text-end">
+                           very good
+                          </td>
+                           <td class="px-0  fw-medium text-end">
+                           1.1lacs per month
                           </td>
                         </tr>
-                        <tr>
+                         <tr>
                           <td class="px-0">
                             <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile/user-8.jpg" class="rounded-circle" width="40"
+                              <img src="./assets/images/profile/user-3.jpg" class="rounded-circle" width="40"
                                 alt="flexy" />
                               <div class="ms-3">
-                                <h6 class="mb-0 fw-bolder">Micheal Doe</h6>
-                                <span class="text-muted">Content Writer</span>
+                                <h6 class="mb-0 fw-bolder">hamza tariq</h6>
+                                <span class="text-muted">since: 1 year</span>
                               </div>
                             </div>
                           </td>
-                          <td class="px-0">Helping Hands WP Theme</td>
+                          <td class="px-0">610</td>
                           <td class="px-0">
-                            <span class="badge bg-success">Low</span>
+                            <span class="badge bg-info">72%</span>
                           </td>
                           <td class="px-0 text-dark fw-medium text-end">
-                            $9.3K
+                           27mins
+                          </td>
+                          <td class="px-0  fw-medium text-end">
+                           average
+                          </td>
+                           <td class="px-0  fw-medium text-end">
+                          65k per month
                           </td>
                         </tr>
+                        
+                        
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="">
               <!-- Card -->
               <div class="card">
                 <div class="card-body">
@@ -381,19 +418,13 @@
                           width="50" /></span>
                     </div>
                     <div class="comment-text w-100">
-                      <h6 class="fw-medium">James Anderson</h6>
-                      <p class="mb-1 fs-2 text-muted">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        type setting industry.
-                      </p>
-                      <div class="comment-footer mt-2">
-                        <div class="d-flex align-items-center">
-                          <span class="
-                              badge
-                              bg-info-subtle
-                              text-info
-                              
-                            ">Pending</span>
+                     <h6 class="fw-medium">Areeba Khan</h6>
+<p class="mb-1 fs-2 text-muted">
+Delivered 25 parcels today with zero delays. Rider requested an app upgrade for live traffic.
+</p>
+<span class="badge bg-info-subtle text-info">Pending</span>
+<span class="text-muted ms-auto fw-normal fs-2 d-block mt-2 text-end">June 30, 2025</span>
+
                           <span class="action-icons">
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-edit fs-5"></i></a>
                             <a href="javascript:void(0)" class="ps-3"><i class="ti ti-check fs-5"></i></a>
@@ -415,72 +446,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <h4 class="card-title mb-0">Weather Report</h4>
-                    <select class="form-select w-auto ms-auto">
-                      <option selected="">Today</option>
-                      <option value="1">Weekly</option>
-                    </select>
-                  </div>
-                  <div class="d-flex align-items-center flex-row mt-4">
-                    <div class="p-2 display-5 text-primary">
-                      <i class="ti ti-cloud-snow"></i>
-                      <span>73<sup>°</sup></span>
-                    </div>
-                    <div class="p-2">
-                      <h3 class="mb-0">Saturday</h3>
-                      <small>Ahmedabad, India</small>
-                    </div>
-                  </div>
-                  <table class="table table-borderless">
-                    <tbody>
-                      <tr>
-                        <td>Wind</td>
-                        <td class="fw-medium">ESE 17 mph</td>
-                      </tr>
-                      <tr>
-                        <td>Humidity</td>
-                        <td class="fw-medium">83%</td>
-                      </tr>
-                      <tr>
-                        <td>Pressure</td>
-                        <td class="fw-medium">28.56 in</td>
-                      </tr>
-                      <tr>
-                        <td>Cloud Cover</td>
-                        <td class="fw-medium">78%</td>
-                      </tr>
-                      <tr>
-                        <td>Ceiling</td>
-                        <td class="fw-medium">25760 ft</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <hr />
-                  <ul class="list-unstyled row text-center city-weather-days mb-0">
-                    <li class="col">
-                      <i class="ti ti-sun-high fs-4"></i><span>09:30</span>
-                      <h3 class="mb-0 fs-6 lh-base">70<sup>°</sup></h3>
-                    </li>
-                    <li class="col">
-                      <i class="ti ti-cloud fs-4"></i><span>11:30</span>
-                      <h3 class="mb-0 fs-6 lh-base">72<sup>°</sup></h3>
-                    </li>
-                    <li class="col">
-                      <i class="ti ti-cloud-rain fs-4"></i><span>13:30</span>
-                      <h3 class="mb-0 fs-6 lh-base">75<sup>°</sup></h3>
-                    </li>
-                    <li class="col">
-                      <i class="ti ti-cloud-snow fs-4"></i><span>15:30</span>
-                      <h3 class="mb-0 fs-6 lh-base">76<sup>°</sup></h3>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          
           </div>
           
         </div>

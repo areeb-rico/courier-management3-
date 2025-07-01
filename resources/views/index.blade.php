@@ -36,7 +36,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-  <section class="py-7" id="services"style="background-color:  #f0f9ff;">
+  <section  id="services" class="py-7" id="services"style="background-color:  #f0f9ff;">
   <div class="container" >
     <div class="row justify-content-center">
       <div class="col-md-8 col-lg-5 text-center mb-3">

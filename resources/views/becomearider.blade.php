@@ -33,6 +33,7 @@
          <input type="text" class="p-1 w-100" readonly value="{{Auth::user()->email}}" name="email" placeholder="Email" required>
          <input type="text" class="p-1 w-100" name="rider_phone" placeholder="Phone Number" required>
          <input type="text" class="p-1 w-100" name="rider_address" placeholder="Address" required>
+           <input type="text" name="RiderCnic" class="p-1 w-100" placeholder="Rider Cnic" required>
          <button type="submit" class=" btn btn-primary w-100 btnbecome">Request to Become a Rider</button>
     </form>
     @else

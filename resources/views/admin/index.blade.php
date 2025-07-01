@@ -4,7 +4,7 @@
 
 
         <!-- Content Start -->
-        <div class="content">
+        <div class="content-fluid">
             
 
 
@@ -54,77 +54,63 @@
 
 
             <!-- Recent Sales Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary " href="">Detail</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- Recent Sales End -->
+         <div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Riders Salary Overview</h6>
+            <a href="#">Show All</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-dark">
+                        <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                        <th scope="col">Rider ID</th>
+                        <th scope="col">Rider Name</th>
+                        <th scope="col">Month</th>
+                        <th scope="col">Total Deliveries</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td>RID-001</td>
+                        <td>Ali Khan</td>
+                        <td>June 2025</td>
+                        <td>125</td>
+                        <td>Rs. 25,000</td>
+                        <td><span class="badge bg-success">Paid</span></td>
+                        <td><a class="btn btn-sm btn-primary" href="#">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td>RID-002</td>
+                        <td>Usman Tariq</td>
+                        <td>June 2025</td>
+                        <td>110</td>
+                        <td>Rs. 22,000</td>
+                        <td><span class="badge bg-warning text-dark">Pending</span></td>
+                        <td><a class="btn btn-sm btn-primary" href="#">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td>RID-003</td>
+                        <td>Zain Raza</td>
+                        <td>June 2025</td>
+                        <td>100</td>
+                        <td>Rs. 20,000</td>
+                        <td><span class="badge bg-success">Paid</span></td>
+                        <td><a class="btn btn-sm btn-primary" href="#">View</a></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 
           
@@ -138,10 +124,10 @@
                             &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                            
+                            Designed By arib.rico 
                         </br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        Distributed By <a class="border-bottom" href="https://seoinspirations.com" target="_blank">@seoinspirations.com</a>
                         </div>
                     </div>
                 </div>
