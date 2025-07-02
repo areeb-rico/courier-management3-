@@ -65,7 +65,7 @@ Route::middleware([Admin::class])->group(function(){
 Route::get('/widget', function () {
     return view('admin.widget');
 });
-
+    
     Route::get('/admin/viewparcels',[RiderControler::class,('getparceladmin')]);
 });
 

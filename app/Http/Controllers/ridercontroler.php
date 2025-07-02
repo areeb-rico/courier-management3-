@@ -96,7 +96,7 @@ $r = new rider();
 
     public function getparcelform()
     {
-        $rider = Rider::get();
+        $rider = User::where('userrole','rider')->get();
         return view('riderdash.uploadparcel',compact('rider'));
 
     }

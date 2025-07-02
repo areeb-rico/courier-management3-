@@ -53,7 +53,7 @@
         <select name="RiderId" id="" class="w-100 p-1 mt-2 mb-2" required>
             <option value="" selected disabled>Select Rider</option>
             @foreach($rider as $r)
-            <option value="{{$r->id}}">{{$r->RiderName}}</option>
+            <option value="{{$r->id}}">{{$r->name}}</option>
             @endforeach
         </select>
         <input type="file" class="w-100 p-1 form-control" name="ParcelImage">
